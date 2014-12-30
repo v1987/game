@@ -282,5 +282,14 @@ T* SMUManager<T>::GetSMU(SMUID_t SMUId) {
 
 // ===============================
 
+// TODO 定义具体的共享内存管理器
 // template<typename T>
 // BOOL SMUManager<T>::HeartBeat(UINT uTime = 0);
+
+
+// 如:
+// SMUPool<HumanSMU>*	g_pHumanSMUPool = NULL;;
+//
+// BOOL	SMUManager<HumanSMU>::HeartBeat(UINT uTime/* =0 */) {
+// 	return TRUE;
+// }
