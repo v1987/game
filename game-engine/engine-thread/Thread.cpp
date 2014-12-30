@@ -293,7 +293,7 @@ VOID tProcessException(PEXCEPTION_POINTERS pException) throw () {
 #endif
 
 uint g_QuitThreadCount = 0;
-MyLock g_thread_lock;
+Lock g_thread_lock;
 
 Thread::Thread() {
     __ENTER_FUNCTION

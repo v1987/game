@@ -3,42 +3,42 @@
 //共享锁
 #if defined(__WINDOWS__)
 
-MyLock::MyLock() {
+Lock::Lock() {
     InitializeCriticalSection(&m_Lock);
 };
 
-MyLock::~MyLock() {
+Lock::~Lock() {
     DeleteCriticalSection(&m_Lock);
 };
 
-VOID MyLock::Lock() {
+VOID Lock::Lock() {
     EnterCriticalSection(&m_Lock);
 };
 
-VOID MyLock::Unlock() {
+VOID Lock::Unlock() {
     LeaveCriticalSection(&m_Lock);
 };
 #elif defined(__LINUX__)
-MyLock::MyLock() {
+Lock::Lock() {
     pthread_mutex_init(&m_Mutex, NULL);
 };
 
-MyLock::~MyLock() {
+Lock::~Lock() {
     pthread_mutex_destroy(&m_Mutex);
 };
 
-VOID MyLock::Lock() {
+VOID Lock::OnLock() {
     pthread_mutex_lock(&m_Mutex);
 };
 
-VOID MyLock::Unlock() {
+VOID Lock::Unlock() {
     pthread_mutex_unlock(&m_Mutex);
 };
 #endif
 
 
 //自动加锁解锁器
-AutoLock_T::AutoLock_T(MyLock& rLock) {
+AutoLock_T::AutoLock_T(Lock& rLock) {
     m_pLock = &rLock;
     m_pLock->Lock();
 }

@@ -14,13 +14,13 @@
 //共享锁
 #if defined(__WINDOWS__)
 
-class MyLock {
+class Lock {
     CRITICAL_SECTION m_Lock;
 public:
 
-    MyLock();
+    Lock();
 
-    ~MyLock();
+    ~Lock();
 
     VOID Lock();
 
@@ -28,15 +28,15 @@ public:
 };
 #elif defined(__LINUX__)
 
-class MyLock {
+class Lock {
     pthread_mutex_t m_Mutex;
 public:
 
-    MyLock();
+    Lock();
 
-    ~MyLock();
+    ~Lock();
 
-    VOID Lock();
+    VOID OnLock();
 
     VOID Unlock();
 };
@@ -46,11 +46,11 @@ public:
 class AutoLock_T {
 public:
 
-    AutoLock_T(MyLock& rLock);
+    AutoLock_T(Lock& rLock);
     ~AutoLock_T();
 private:
     AutoLock_T();
-    MyLock* m_pLock;
+    Lock* m_pLock;
 };
 
 #endif	/* CN_VICKY__LOCK_H */
