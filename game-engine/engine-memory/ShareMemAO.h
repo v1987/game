@@ -14,7 +14,6 @@
 
 #define SHMEM_LOG_PATH	"./Log/ShareMemory.log"
 
-
 // 共享内存模式
 
 enum CMD_MODE {

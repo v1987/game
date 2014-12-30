@@ -58,7 +58,7 @@ BOOL Log::Init() {
     return FALSE;
 }
 
-VOID Log::FastSaveLog(INT logid, CHAR* msg, ...) {
+VOID Log::FastSaveLog(INT logid, const CHAR* msg, ...) {
     __ENTER_FUNCTION
 
     if (logid < 0 || logid >= LOG_FILE_NUMBER)
@@ -156,7 +156,7 @@ VOID Log::GetLogName(INT logid, CHAR* szName) {
     __LEAVE_FUNCTION
 }
 
-VOID Log::SaveLog(CHAR* filename, CHAR* msg, ...) {
+VOID Log::SaveLog(const CHAR* filename, const CHAR* msg, ...) {
     __ENTER_FUNCTION
 
     g_log_lock.OnLock();
@@ -198,7 +198,7 @@ VOID Log::SaveLog(CHAR* filename, CHAR* msg, ...) {
     return;
 }
 
-VOID Log::RemoveLog(CHAR* filename) {
+VOID Log::RemoveLog(const CHAR* filename) {
     __ENTER_FUNCTION
 
     g_log_lock.OnLock();

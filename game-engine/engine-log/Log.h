@@ -23,13 +23,13 @@ enum LOG_FILE_NAME_ID {
 
 
 // 具体日志坐标对应的名称
-CHAR* g_pLogFileName[] =
+const CHAR* g_pLogFileName[] =
 {
     "./Log/login",          //0		LOG_FILE_0
     "./Log/debug",          //1		LOG_FILE_1
     "./Log/error",          //2		LOG_FILE_2
     "./Log/functions",      //3		LOG_FILE_3
-    '\0'
+    "\0"
 };
 
 
@@ -43,7 +43,7 @@ public:
     BOOL Init();
 
     //向日志缓存写入日志信息
-    VOID FastSaveLog(INT logid, CHAR* msg, ...);
+    VOID FastSaveLog(INT logid, const CHAR* msg, ...);
 
     //将日志内存数据写入文件
     VOID FlushLog(INT logid);
@@ -73,9 +73,9 @@ public:
 
 
     //支持异步写入操作的日志写入
-    static VOID SaveLog(CHAR* filename, CHAR* msg, ...);
+    static VOID SaveLog(const CHAR* filename, const CHAR* msg, ...);
     //删除日志内容
-    static VOID RemoveLog(CHAR* filename);
+    static VOID RemoveLog(const CHAR* filename);
 
 
 private:
