@@ -36,6 +36,7 @@ OBJECTDIR=${CND_BUILDDIR}/${CND_CONF}/${CND_PLATFORM}
 # Object Files
 OBJECTFILES= \
 	${OBJECTDIR}/GameUtil.o \
+	${OBJECTDIR}/Rand.o \
 	${OBJECTDIR}/TimeManager.o
 
 
@@ -67,6 +68,11 @@ ${OBJECTDIR}/GameUtil.o: GameUtil.cpp
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
 	$(COMPILE.cc) -O2 -fPIC  -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/GameUtil.o GameUtil.cpp
+
+${OBJECTDIR}/Rand.o: Rand.cpp 
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.cc) -O2 -fPIC  -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Rand.o Rand.cpp
 
 ${OBJECTDIR}/TimeManager.o: TimeManager.cpp 
 	${MKDIR} -p ${OBJECTDIR}
