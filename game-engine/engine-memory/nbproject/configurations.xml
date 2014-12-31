@@ -11,6 +11,7 @@
     </logicalFolder>
     <logicalFolder name="SourceFiles" displayName="源文件" projectFiles="true">
       <itemPath>CommandThread.cpp</itemPath>
+      <itemPath>SMULogicManager.cpp</itemPath>
       <itemPath>SMUManager.cpp</itemPath>
       <itemPath>SMUPool.cpp</itemPath>
       <itemPath>ShareMemAO.cpp</itemPath>
@@ -43,6 +44,8 @@
       <item path="CommandThread.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="CommandThread.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="SMULogicManager.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="SMULogicManager.h" ex="false" tool="3" flavor2="0">
       </item>
@@ -86,6 +89,8 @@
       <item path="CommandThread.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="CommandThread.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="SMULogicManager.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="SMULogicManager.h" ex="false" tool="3" flavor2="0">
       </item>

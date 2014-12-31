@@ -36,6 +36,7 @@ OBJECTDIR=${CND_BUILDDIR}/${CND_CONF}/${CND_PLATFORM}
 # Object Files
 OBJECTFILES= \
 	${OBJECTDIR}/CommandThread.o \
+	${OBJECTDIR}/SMULogicManager.o \
 	${OBJECTDIR}/SMUManager.o \
 	${OBJECTDIR}/SMUPool.o \
 	${OBJECTDIR}/ShareMemAO.o \
@@ -70,6 +71,11 @@ ${OBJECTDIR}/CommandThread.o: CommandThread.cpp
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
 	$(COMPILE.cc) -g -fPIC  -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/CommandThread.o CommandThread.cpp
+
+${OBJECTDIR}/SMULogicManager.o: SMULogicManager.cpp 
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.cc) -g -fPIC  -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/SMULogicManager.o SMULogicManager.cpp
 
 ${OBJECTDIR}/SMUManager.o: SMUManager.cpp 
 	${MKDIR} -p ${OBJECTDIR}
