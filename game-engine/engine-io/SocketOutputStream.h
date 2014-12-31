@@ -31,47 +31,30 @@ public:
     UINT Flush();
 
     VOID Initsize();
+    
     BOOL Resize(INT size);
 
-    INT Capacity() const {
-        return m_BufferLen;
-    }
+    INT Capacity() const;
 
     UINT Length() const;
 
-    UINT Size() const {
-        return Length();
-    }
+    UINT Size() const;
 
-    CHAR* GetBuffer() const {
-        return m_Buffer;
-    }
+    CHAR* GetBuffer() const;
 
-    CHAR* GetTail() const {
-        return &(m_Buffer[m_Tail]);
-    }
+    CHAR* GetTail() const;
 
-    BOOL IsEmpty() const {
-        return m_Head == m_Tail;
-    }
-
+    BOOL IsEmpty() const;
+    
     VOID CleanUp();
 
-    UINT GetHead() {
-        return m_Head;
-    }
+    UINT GetHead();
 
-    UINT GetTail() {
-        return m_Tail;
-    }
+    UINT GetTail();
 
-    UINT GetBuffLen() {
-        return m_BufferLen;
-    }
+    UINT GetBuffLen();
 
-    CHAR* GetBuff() {
-        return m_Buffer;
-    }
+    CHAR* GetBuff();
 protected:
 
     Socket* m_pSocket;

@@ -1,5 +1,41 @@
 #include "SocketOutputStream.h"
 
+INT SocketOutputStream::Capacity() const {
+    return m_BufferLen;
+}
+
+UINT SocketOutputStream::Size() const {
+    return Length();
+}
+
+CHAR* SocketOutputStream::GetBuffer() const {
+    return m_Buffer;
+}
+
+CHAR* SocketOutputStream::GetTail() const {
+    return &(m_Buffer[m_Tail]);
+}
+
+BOOL SocketOutputStream::IsEmpty() const {
+    return m_Head == m_Tail;
+}
+
+UINT SocketOutputStream::GetHead() {
+    return m_Head;
+}
+
+UINT SocketOutputStream::GetTail() {
+    return m_Tail;
+}
+
+UINT SocketOutputStream::GetBuffLen() {
+    return m_BufferLen;
+}
+
+CHAR* SocketOutputStream::GetBuff() {
+    return m_Buffer;
+}
+
 SocketOutputStream::SocketOutputStream(Socket* sock, UINT BufferLen, UINT MaxBufferLen) {
     __ENTER_FUNCTION_FOXNET
 
@@ -227,7 +263,7 @@ BOOL SocketOutputStream::Resize(INT size) {
 
     //	Assert( size != 0 );
 
-    INT orgSize = size;
+    // INT orgSize = size;
 
     size = max(size, (int) (m_BufferLen >> 1));
     UINT newBufferLen = m_BufferLen + size;
