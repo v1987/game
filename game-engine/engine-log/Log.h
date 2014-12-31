@@ -22,15 +22,6 @@ enum LOG_FILE_NAME_ID {
 };
 
 
-// 具体日志坐标对应的名称
-const CHAR* g_pLogFileName[] =
-{
-    "./Log/login",          //0		LOG_FILE_0
-    "./Log/debug",          //1		LOG_FILE_1
-    "./Log/error",          //2		LOG_FILE_2
-    "./Log/functions",      //3		LOG_FILE_3
-    "\0"
-};
 
 
 #define DEFAULT_LOG_CACHE_SIZE 1024 * 1024 * 4

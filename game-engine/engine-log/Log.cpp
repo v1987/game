@@ -2,6 +2,16 @@
 #include "../engine-utils/GameUtil.h"
 #include "../engine-utils/TimeManager.h"
 
+// 具体日志坐标对应的名称
+const CHAR* g_pLogFileName[] =
+{
+    "./Log/login",          //0		LOG_FILE_0
+    "./Log/debug",          //1		LOG_FILE_1
+    "./Log/error",          //2		LOG_FILE_2
+    "./Log/functions",      //3		LOG_FILE_3
+    "\0"
+};
+
 // 线程锁
 Lock g_log_lock;
 

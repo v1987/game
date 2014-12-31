@@ -1,4 +1,5 @@
 #include "SMUManager.h"
+#include "../engine-log/Log.h"
 
 
 template<typename T>
@@ -55,7 +56,7 @@ BOOL SMUPool<T>::Init(uint nMaxCount, SM_KEY key, SMPOOL_TYPE SMPT) {
             return TRUE;
         }
 
-//        Log::SaveLog(SHMEM_LOG_PATH, "Setup SMU block fail!");
+        Log::SaveLog(SHMEM_LOG_PATH, "Setup SMU block fail!");
         Assert(ret);
         return ret;
 
