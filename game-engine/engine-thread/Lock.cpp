@@ -40,7 +40,7 @@ VOID Lock::Unlock() {
 //自动加锁解锁器
 AutoLock_T::AutoLock_T(Lock& rLock) {
     m_pLock = &rLock;
-    m_pLock->Lock();
+    m_pLock->OnLock();
 }
 
 AutoLock_T::~AutoLock_T() {

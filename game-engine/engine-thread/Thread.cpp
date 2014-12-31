@@ -371,7 +371,7 @@ VOID * MyThreadProcess(VOID * derivedThread) {
     //INT ret = 0;
     //thread->exit(&ret);
 
-    g_thread_lock.Lock();
+    g_thread_lock.OnLock();
     g_QuitThreadCount++;
     g_thread_lock.Unlock();
 

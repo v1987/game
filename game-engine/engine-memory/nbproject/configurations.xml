@@ -2,12 +2,17 @@
 <configurationDescriptor version="94">
   <logicalFolder name="root" displayName="root" projectFiles="true" kind="ROOT">
     <logicalFolder name="HeaderFiles" displayName="头文件" projectFiles="true">
+      <itemPath>CommandThread.h</itemPath>
+      <itemPath>SMULogicManager.h</itemPath>
       <itemPath>SMUManager.h</itemPath>
+      <itemPath>SMUPool.h</itemPath>
       <itemPath>ShareMemAO.h</itemPath>
       <itemPath>ShareMemAPI.h</itemPath>
     </logicalFolder>
     <logicalFolder name="SourceFiles" displayName="源文件" projectFiles="true">
+      <itemPath>CommandThread.cpp</itemPath>
       <itemPath>SMUManager.cpp</itemPath>
+      <itemPath>SMUPool.cpp</itemPath>
       <itemPath>ShareMemAO.cpp</itemPath>
       <itemPath>ShareMemAPI.cpp</itemPath>
     </logicalFolder>
@@ -35,9 +40,19 @@
       </toolsSet>
       <compileType>
       </compileType>
+      <item path="CommandThread.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="CommandThread.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="SMULogicManager.h" ex="false" tool="3" flavor2="0">
+      </item>
       <item path="SMUManager.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="SMUManager.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="SMUPool.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="SMUPool.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="ShareMemAO.cpp" ex="false" tool="1" flavor2="0">
       </item>
@@ -68,9 +83,19 @@
           <developmentMode>5</developmentMode>
         </asmTool>
       </compileType>
+      <item path="CommandThread.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="CommandThread.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="SMULogicManager.h" ex="false" tool="3" flavor2="0">
+      </item>
       <item path="SMUManager.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="SMUManager.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="SMUPool.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="SMUPool.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="ShareMemAO.cpp" ex="false" tool="1" flavor2="0">
       </item>
