@@ -44,17 +44,17 @@ public:
     VOID Initsize();
     BOOL Resize(INT size);
 
-    UINT Capacity()const {
+    UINT Capacity() const {
         return m_BufferLen;
     }
 
-    UINT Length()const;
+    UINT Length() const;
 
-    UINT Size()const {
+    UINT Size() const {
         return Length();
     }
 
-    BOOL IsEmpty()const {
+    BOOL IsEmpty() const {
         return m_Head == m_Tail;
     }
 

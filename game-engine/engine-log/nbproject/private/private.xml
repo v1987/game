@@ -6,6 +6,9 @@
     </data>
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
-        <group name="vicking"/>
+        <group name="vicking">
+            <file>file:/E:/CppProject/vicking/game-engine/engine-log/Log.h</file>
+            <file>file:/E:/CppProject/vicking/game-engine/engine-log/Log.cpp</file>
+        </group>
     </open-files>
 </project-private>
