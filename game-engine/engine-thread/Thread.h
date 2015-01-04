@@ -34,11 +34,10 @@ public:
 
     VOID start();
 
-    virtual VOID stop();
-
     VOID exit(VOID * retval = NULL);
 
     virtual VOID run();
+    virtual VOID stop();
 
 
 public:

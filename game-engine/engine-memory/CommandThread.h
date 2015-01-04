@@ -4,6 +4,7 @@
  * Email:  eclipser@163.com
  *
  * Created on 2014年12月31日, 上午10:06
+ * 通过命令行命令,来进行对共享内存的处理:saveall/clearall
  */
 
 #ifndef CN_VICKY__COMMANDTHREAD_H

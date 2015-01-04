@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://www.netbeans.org/ns/project/1">
+    <type>org.netbeans.modules.cnd.makeproject</type>
+    <configuration>
+        <data xmlns="http://www.netbeans.org/ns/make-project/1">
+            <name>game-chatserver</name>
+            <c-extensions/>
+            <cpp-extensions>cpp</cpp-extensions>
+            <header-extensions/>
+            <sourceEncoding>UTF-8</sourceEncoding>
+            <make-dep-projects>
+                <make-dep-project>../game-engine/engine-socket</make-dep-project>
+                <make-dep-project>../game-engine/engine-timer</make-dep-project>
+                <make-dep-project>../game-engine/engine-common</make-dep-project>
+                <make-dep-project>../game-engine/engine-thread</make-dep-project>
+                <make-dep-project>../game-engine/engine-file</make-dep-project>
+                <make-dep-project>../game-engine/engine-memory</make-dep-project>
+                <make-dep-project>../game-engine/engine-ini</make-dep-project>
+                <make-dep-project>../game-engine/engine-io</make-dep-project>
+                <make-dep-project>../game-engine/engine-log</make-dep-project>
+                <make-dep-project>../game-engine/engine-utils</make-dep-project>
+            </make-dep-projects>
+            <sourceRootList/>
+            <confList>
+                <confElem>
+                    <name>Debug</name>
+                    <type>1</type>
+                </confElem>
+                <confElem>
+                    <name>Release</name>
+                    <type>1</type>
+                </confElem>
+            </confList>
+            <formatting>
+                <project-formatting-style>false</project-formatting-style>
+            </formatting>
+        </data>
+    </configuration>
+</project>
