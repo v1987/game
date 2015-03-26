@@ -6,11 +6,7 @@
     </data>
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
-        <group name="vicking">
-            <file>file:/E:/CppProject/vicking/game-engine/engine-utils/TimeManager.h</file>
-            <file>file:/E:/CppProject/vicking/game-engine/engine-utils/TimeManager.cpp</file>
-            <file>file:/E:/CppProject/vicking/game-engine/engine-utils/Rand.h</file>
-            <file>file:/E:/CppProject/vicking/game-engine/engine-utils/Rand.cpp</file>
-        </group>
+        <group/>
+        <group name="vicking"/>
     </open-files>
 </project-private>

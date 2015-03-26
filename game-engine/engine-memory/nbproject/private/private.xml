@@ -6,17 +6,7 @@
     </data>
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
-        <group name="vicking">
-            <file>file:/E:/CppProject/vicking/game-engine/engine-memory/SMUManager.cpp</file>
-            <file>file:/E:/CppProject/vicking/game-engine/engine-memory/SMUManager.h</file>
-            <file>file:/E:/CppProject/vicking/game-engine/engine-memory/SMUPool.h</file>
-            <file>file:/E:/CppProject/vicking/game-engine/engine-memory/SMUPool.cpp</file>
-            <file>file:/E:/CppProject/vicking/game-engine/engine-memory/SMULogicManager.h</file>
-            <file>file:/E:/CppProject/vicking/game-engine/engine-memory/CommandThread.h</file>
-            <file>file:/E:/CppProject/vicking/game-engine/engine-memory/CommandThread.cpp</file>
-            <file>file:/E:/CppProject/vicking/game-engine/engine-memory/ShareMemAO.h</file>
-            <file>file:/E:/CppProject/vicking/game-engine/engine-memory/ShareMemAPI.h</file>
-            <file>file:/E:/CppProject/vicking/game-engine/engine-memory/SMULogicManager.cpp</file>
-        </group>
+        <group/>
+        <group name="vicking"/>
     </open-files>
 </project-private>
